@@ -1,7 +1,55 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
-<body>
-<h1>Dirtyjesuss vsem salam</h1>
-<p>I'm hosted with GitHub Pages.</p>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>acasc</title>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+</head>
+
+<body class="stackedit">
+  <div class="stackedit__html"><h3 id="original-regex">original regex</h3>
+<p><code>^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$</code></p>
+<h3 id="pseudo-code">pseudo code</h3>
+<pre><code>[
+regexToken.startLine,
+regexToken.assertSubPattternWithoutConsuming([
+	regexToken.anyCharacter(regexQuantifier.zeroOrMore),
+	regexToken.digit
+]),
+regexToken.assertSubPattternWithoutConsuming([
+	regexToken.anyCharacter(regexQuantifier.zeroOrMore),
+	regexToken.characterInRange('a', 'z')
+]),
+regexToken.assertSubPattternWithoutConsuming([
+	regexToken.anyCharacter(regexQuantifier.zeroOrMore),
+	regexToken.characterInRange('A', 'Z')
+]),
+regexToken.anyCharacter(regexQuantifier.exactNumberOrMore(8)),
+regexToken.endLine
+]
+</code></pre>
+<h3 id="swift-code">swift code</h3>
+<pre class=" language-swift"><code class="prism  language-swift"><span class="token punctuation">[</span>
+<span class="token punctuation">.</span>startLine<span class="token punctuation">,</span>
+<span class="token punctuation">.</span><span class="token function">assertSubPattternWithoutConsuming</span><span class="token punctuation">(</span><span class="token punctuation">[</span>
+	<span class="token punctuation">.</span><span class="token function">anyCharacter</span><span class="token punctuation">(</span><span class="token punctuation">.</span>zeroOrMore<span class="token punctuation">)</span>
+	<span class="token punctuation">.</span>digit
+<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+<span class="token punctuation">.</span><span class="token function">assertSubPattternWithoutConsuming</span><span class="token punctuation">(</span><span class="token punctuation">[</span>
+	<span class="token punctuation">.</span><span class="token function">anyCharacter</span><span class="token punctuation">(</span><span class="token punctuation">.</span>zeroOrMore<span class="token punctuation">)</span>
+	<span class="token punctuation">.</span><span class="token function">character</span><span class="token punctuation">(</span><span class="token keyword">in</span><span class="token punctuation">:</span> <span class="token string">'a'</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token string">'z'</span><span class="token punctuation">)</span>
+<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+<span class="token punctuation">.</span><span class="token function">assertSubPattternWithoutConsuming</span><span class="token punctuation">(</span><span class="token punctuation">[</span>
+	<span class="token punctuation">.</span><span class="token function">anyCharacter</span><span class="token punctuation">(</span><span class="token punctuation">.</span>zeroOrMore<span class="token punctuation">)</span>
+	<span class="token punctuation">.</span><span class="token function">character</span><span class="token punctuation">(</span><span class="token keyword">in</span><span class="token punctuation">:</span> <span class="token string">'A'</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token string">'Z'</span><span class="token punctuation">)</span>
+<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+<span class="token punctuation">.</span><span class="token function">anyCharacter</span><span class="token punctuation">(</span><span class="token punctuation">.</span><span class="token function">exactNumberOrMore</span><span class="token punctuation">(</span><span class="token number">8</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+<span class="token punctuation">.</span>endLine
+<span class="token punctuation">]</span>
+</code></pre>
+</div>
 </body>
+
 </html>
