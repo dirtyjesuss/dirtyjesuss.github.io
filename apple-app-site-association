@@ -1,19 +1,23 @@
 {
-  "applinks": {
-    "apps": [],
-    "details": [
-    	 {
-	 	"appIDs": [ "JVJ5VHX365.ru.tstst.mysubsidie" ],
-			"components": [
-				{
-					"/": "/subsidy/grants/*",
-					"comment": ""
-				}
-			]
-	},
+  "applinks":{
+    "apps":[],
+    "details":[
       {
-        "appID": "JVJ5VHX365.ru.tstst.mysubsidie",
-        "paths": ["/subsidy/grants/*"]
+        "appIDs":[
+          "JVJ5VHX365.ru.tstst.mysubsidie"
+        ],
+        "components":[
+          {
+            "/":"/subsidy/grants/*",
+            "comment":"Deeplink on subsidy"
+          }
+        ]
+      },
+      {
+        "appID":"JVJ5VHX365.ru.tstst.mysubsidie",
+        "paths":[
+          "/subsidy/grants/*"
+        ]
       }
     ]
   }
