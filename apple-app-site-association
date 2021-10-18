@@ -3,14 +3,14 @@
     "apps": [],
     "details": [
     	 {
-				"appIDs": [ "JVJ5VHX365.ru.tstst.mysubsidie" ],
-				"components": [
-					{
-						"/": "/subsidy/grants/*",
-						"comment": ""
-					}
-				]
-			},
+	 	"appIDs": [ "JVJ5VHX365.ru.tstst.mysubsidie" ],
+			"components": [
+				{
+					"/": "/subsidy/grants/*",
+					"comment": ""
+				}
+			]
+	},
       {
         "appID": "JVJ5VHX365.ru.tstst.mysubsidie",
         "paths": ["/subsidy/grants/*"]
