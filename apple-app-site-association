@@ -9,14 +9,19 @@
         "components":[
           {
             "/":"/subsidy/grants/*",
-            "comment":"Deeplink on subsidy"
+            "comment":""
+          },
+          {
+            "/":"/landing/",
+            "comment":""
           }
         ]
       },
       {
         "appID":"JVJ5VHX365.ru.tstst.mysubsidie",
         "paths":[
-          "/subsidy/grants/*"
+          "/subsidy/grants/*",
+          "/landing/"
         ]
       }
     ]
