@@ -4,7 +4,7 @@
 		"details": [
 			{
 				"appID": "JVJ5VHX365.ru.tstst.mysubsidie",
-				"paths": ["/subsidy/grants/*", "/landing/"]
+				"paths": ["/subsidy/grants/*", "/landing"]
 			}
 		]
 	}
