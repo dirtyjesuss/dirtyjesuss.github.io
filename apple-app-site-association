@@ -3,10 +3,30 @@
     "apps":[],
     "details":[
       {
+        "appIDs":[
+          "JVJ5VHX365.ru.tstst.mysubsidie"
+        ],
+        "components":[
+          {
+            "/":"/subsidy/grants/*",
+            "comment":""
+          },
+          {
+            "/":"/landing/",
+            "comment":""
+          },
+          {
+            "/":"/",
+            "comment":""
+          }
+        ]
+      },
+      {
         "appID":"JVJ5VHX365.ru.tstst.mysubsidie",
         "paths":[
           "/subsidy/grants/*",
-          "/landing/"
+          "/landing/",
+          "/"
         ]
       }
     ]
